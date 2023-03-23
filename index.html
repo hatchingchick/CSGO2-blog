@@ -7,7 +7,7 @@
 </head>
 <body>
   <header>
-    <h1>My Blog</h1>
+    <h1>{CSGO}自動で合法的にストッピングする方法</h1>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -79,13 +79,37 @@ footer {
 }
 
 </style>
+<p>CSGOで正確に射撃するために主にストッピングと呼ばれる技術が必要で撃つ時にAまたはDなどの進んでいる方向と逆のキーを押して止まったりするスキルが必要です。しかし瞬時にストッピングしながらエイムを合わせるのは至難の技で、直ぐに熟練プレイヤーと戦えるようになるには時間がかかり難しくなってきますそこで今回は初心者でもすぐに出来るストッピング撃ちの上位互換とも言えるやり方をいくつか紹介します</p>
     <article>
-      <h2>Article Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat enim nec nunc dapibus, at aliquam velit tincidunt. Sed nec mauris varius, fringilla elit non, bibendum urna. Vestibulum vestibulum nisi vitae tellus sollicitudin, vel euismod augue pretium. Praesent sollicitudin, nunc vel tempor iaculis, urna velit ullamcorper nulla, nec cursus arcu enim in diam. Suspendisse potenti. In fermentum mi a leo elementum, at rhoncus augue sodales. Nulla id eleifend urna.</p>
+      <h2>自動しゃがみ撃ち</h2>
+<p>CSGOでは主にバインドと呼ばれるコンソールにコマンドを貼り付けたり、cfgファイルをいじったりするなどの合法チートが許可されており少なくとも10年以上前から使用されている裏技があります。</p>
+<br>
+<p>自動的にしゃがみ撃ちをする事によってストッピングを再現し、更に命中率を上げることが出来るのでSMGが中距離で使いやすくなったり、しゃがむと同時に視点中央のクロスヘアも下に下がるため、AK47などの反動が大きくリコイルコントロールが必要な武器でも狙いやすくなったりと便利なコマンドです</p>
+ <font color="#808000">alias +duckshot "+attack; +duck"
+alias -duckshot "-attack; -duck"
+bind mouse1 "+duckshot"
+<br>
+</font>
+<p>これをコピーしてコンソールに貼り付けます</p>
+<br>
+ <font color="red">注意：しゃがむ事によって敵に頭を狙われやすくなります</font>
     </article>
     <article>
       <h2>Another Article Title</h2>
-      <p>Aliquam rutrum orci vel diam cursus sagittis. Nam et varius lorem. Aliquam bibendum tellus tellus, eu ullamcorper ipsum mollis vel. Suspendisse potenti. In in mi vel augue malesuada pellentesque. Nunc id dui hendrerit, sollicitudin ante ut, eleifend turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed sit amet libero dignissim, vestibulum elit vel, lacinia dolor.</p>
+    <h2>歩き撃ち</h2>
+      <p>こちらは上記で紹介したコマンドの歩き版です。</p>
+<br>
+<p>しゃがみ撃ちと違って命中率は下がりますが実質的にはストッピングをある程度再現出来ます。また、上記で説明した通りしゃがみ撃ちには敵に頭を狙われやすくなってしまうなどのデメリットもあるのでこっちを使うことによってそのリスクを減らすことが出来ます</p>
+<br>
+ <font color="#808000">
+alias +walkshot "+attack; +speed"
+alias -walkshot "-attack; -speed"
+bind mouse1 "+walkshot"
+</font>
+<br>
+これをコピーしてコンソールに貼り付けます。
+<p>また、これらのコマンドは同時に使うと正しく動作しない可能性があります。解除するには設定からMOUSE1に射撃を割り当ててください</p>
+</font>
     </article>
   </main>
   <footer>
